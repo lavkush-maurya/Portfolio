@@ -58,14 +58,13 @@ SSSssshhhhh!! The code starts below -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Lavkush Maurya " />
   <meta property="og:url" content="index.html" />
-  <meta property="og:image" content="https://media.licdn.com/dms/image/C5603AQGlaETVO8Fm4w/profile-displayphoto-shrink_400_400/0/1612333964014?e=1681344000&v=beta&t=d7naHHt1IMVgsEx7x9LjxOfyPWyQ19dReVjUDGKc3Fo" />
+  <meta property="og:image"
+    content="https://media.licdn.com/dms/image/C5603AQGlaETVO8Fm4w/profile-displayphoto-shrink_400_400/0/1612333964014?e=1681344000&v=beta&t=d7naHHt1IMVgsEx7x9LjxOfyPWyQ19dReVjUDGKc3Fo" />
   <meta property="og:site_name" content="Lavkush Maurya" />
   <meta property="og:description"
     content="Hello World, I'm a Web developer and YouTuber. If you want your own website or grow your business online then coffee with me." />
   <title>Lavkush Maurya</title>
-  <link
-    href="img/logo.png"
-    type="image/x-icon" rel="shortcut icon" />
+  <link href="img/logo.png" type="image/x-icon" rel="shortcut icon" />
   <link rel="stylesheet" href="css/foundation.css" />
   <script src="js/vendor/modernizr.js"></script>
   <link rel="stylesheet" href="css/style.css" />
@@ -106,7 +105,7 @@ SSSssshhhhh!! The code starts below -->
             <span class="iama">I am </span>
             <span class="cd-words-wrapper">
               <b class="is-visible">a web developer.&nbsp;&nbsp;</b>
-<!--               <b>a YouTuber.</b> -->
+              <b>a Blogger.</b>
               <b>a digital marketer.</b>
               <b>an SEO analyst.</b>
               <b>a proud Indian.</b>
@@ -136,22 +135,25 @@ SSSssshhhhh!! The code starts below -->
         <div class="large-8 medium-8 columns">
           <h1>About me.</h1>
           <p>
-            Hi I am <a href="https://www.linkedin.com/in/lavkushmaurya2001/" target="_blank">Lavkush Maurya</a>, a 22 year old Web
-            developer living in <a href="https://www.google.co.in/maps/place/Surat,+Gujarat/"
-              target="_blank">Surat, India</a>. I am a Master of Computer Science Engineer.
-              <!-- , currently working with awesome
+            Hi I am <a href="https://www.linkedin.com/in/lavkushmaurya2001/" target="_blank">Lavkush Maurya</a>, a 22
+            year old Web
+            developer living in <a href="https://www.google.co.in/maps/place/Surat,+Gujarat/" target="_blank">Surat,
+              India</a>. I am a Master of Computer Science Engineer.
+            <!-- , currently working with awesome
             folks at <a href="http://www.feverr.com/" rel="nofollow" target="_blank">Freelancer</a>. -->
           </p>
           <p>
             Have a look at my <a href="https://youtube.com/lavkush04" target="_blank">YouTube Channel</a>, <a
-              href="#myskills">skills</a> or just connect with me on <a href="https://www.linkedin.com/in/lavkushmaurya04/"
-              target="_blank">LinkedIn</a>. I am always excited to do business with like minded people, lets discuss
+              href="#myskills">skills</a> or just connect with me on <a
+              href="https://www.linkedin.com/in/lavkushmaurya04/" target="_blank">LinkedIn</a>. I am always excited to
+            do business with like minded people, lets discuss
             over <a href="#coffeewithme">coffee</a>.
           </p>
         </div>
       </div>
     </div>
   </section>
+
   <hr class="num">
   <section class="numbers-wrapper">
     <section class="numbers-inner-wrapper">
@@ -183,12 +185,23 @@ SSSssshhhhh!! The code starts below -->
         <p>
           Download my Resume
         </p>
-        <a href="resume/Lavkush's Resume.pdf" download="lavkush">
-        <img class="resume" onclick="changeImage()" src="img/dwnld.png">
-      </a>
+        <a href="resume/Lavkush's Resume.pdf" download="lavkush" onclick="delayedDownload(event)">
+          <img class="resume" onclick="changeImage()" src="img/dwnld.png">
+        </a>
+
+        <script>
+          function delayedDownload(event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+            setTimeout(function () {
+              event.target.click();
+              window.location.href = "resume/Lavkush's Resume.pdf";
+            }, 5000);
+          }
+        </script>
       </div>
     </div>
   </section>
+
   <section class="quotes" id="quotes">
     <div class="row alignCenter">
       <h1>Inspiring Quotes.</h1>
@@ -230,15 +243,13 @@ SSSssshhhhh!! The code starts below -->
       </div>
     </div>
   </section>
+
   <section class="coffeewithme" id="coffeewithme">
     <div class="row alignCenter">
       <h1>Coffee with me.</h1>
       <p>
         I am always excited to work on some awesome projects, message me and let's discuss over coffee.
       </p>
-
-
-
       <form id="theForm" class="simform" autocomplete="off">
         <div class="simform-inner">
           <ol class="questions">
@@ -273,11 +284,9 @@ SSSssshhhhh!! The code starts below -->
         <span class="final-message"></span>
       </form>
       <!-- /simform -->
-
-
-      
     </div>
   </section>
+
   <section class="sayhello" id="hello">
     <div class="row">
       <div class="large-4 columns pad10">
@@ -300,8 +309,8 @@ SSSssshhhhh!! The code starts below -->
         </p>
         <ul class="tools">
           <li><a href="https://youtube.com/lavkush04" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-          <li><a href="https://www.facebook.com/lavvkushh" target="_blank"><i
-                class="fa fa-facebook-official"></i></a></li>
+          <li><a href="https://www.facebook.com/lavvkushh" target="_blank"><i class="fa fa-facebook-official"></i></a>
+          </li>
           <li><a href="https://www.linkedin.com/in/lavkushmaurya04/" target="_blank"><i
                 class="fa fa-linkedin-square"></i></a></li>
           <li><a href="mailto:lavkushmaurya147@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>

@@ -135,7 +135,7 @@ var skills = [
     "header": "Mordern Web",
     "captions": [
       "Vue",
-      "SolidJs",
+      "Next",
       "React",
       "Angular",
       "Flutter"
