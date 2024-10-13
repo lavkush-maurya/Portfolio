@@ -76,8 +76,18 @@ SSSssshhhhh!! The code starts below -->
   <link rel="stylesheet" type="text/css" href="css/component.css" />
   <script src="js/modernizr.custom.js"></script>
   <script src="js/jquery.min.js"></script>
+  <link rel="manifest" href="manifest.json">
   <script type="text/javascript">
     function hasScrolled() { var l = $(this).scrollTop(); Math.abs(lastScrollTop - l) <= delta || (l > lastScrollTop && l > navbarHeight ? $("header").removeClass("nav-down").addClass("nav-up") : l + $(window).height() < $(document).height() && $("header").removeClass("nav-up").addClass("nav-down"), lastScrollTop = l) } jQuery(window).scroll(function () { 0 == jQuery(this).scrollTop() ? $("header").addClass("reachedTop") : $("header").removeClass("reachedTop") }); var didScroll, lastScrollTop = 0, delta = 2, navbarHeight = $("header").outerHeight(); $(window).scroll(function (l) { didScroll = !0 }), setInterval(function () { didScroll && (hasScrolled(), didScroll = !1) }, 250);
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('js/service-worker.js')
+          .then(registration => console.log('Service Worker registered:', registration))
+          .catch(error => console.log('Service Worker registration failed:', error));
+      });
+    }
   </script>
 </head>
 
